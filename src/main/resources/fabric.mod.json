@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "vertical_panorama",
+  "version": "${version}",
+  "name": "Vertical Panorama",
+  "description": "Restores the vertically scrolling title screen panorama from Minecraft 1.12.2.",
+  "authors": [],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.enderdevelopment.verticalpanorama.VerticalPanoramaClient"
+    ]
+  },
+  "mixins": [
+    "vertical_panorama.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
